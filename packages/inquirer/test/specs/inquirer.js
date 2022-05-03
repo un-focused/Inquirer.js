@@ -2,16 +2,16 @@
  * Inquirer public API test
  */
 
-const fs = require('fs');
-const os = require('os');
-const stream = require('stream');
-const tty = require('tty');
-const { expect } = require('chai');
-const sinon = require('sinon');
-const { Observable } = require('rxjs');
+import fs from 'fs';
+import os from 'os';
+import stream from 'stream';
+import tty from 'tty';
+import { expect } from 'chai';
+import sinon from 'sinon';
+import { Observable } from 'rxjs';
 
-const inquirer = require('../../lib/inquirer');
-const { autosubmit } = require('../helpers/events');
+import * as inquirer from '../../lib/inquirer';
+import { autosubmit } from '../helpers/events';
 
 const ostype = os.type();
 
@@ -947,7 +947,15 @@ describe('inquirer.prompt', () => {
     });
 
     it("Don't throw an exception when run in non-tty and custom input is provided", (done) => {
-      const prompt = inquirer.createPromptModule({ input: new stream.Readable() });
+      const prompt = inquirer.createPromptModule({
+        input: new stream.Readable({
+          // We must have a default read implementation
+          // for this to work, if not it will error out
+          // with the following error message during testing
+          // Uncaught Error [ERR_METHOD_NOT_IMPLEMENTED]: The _read() method is not implemented
+          read: () => {},
+        }),
+      });
       const prompts = [
         {
           type: 'confirm',

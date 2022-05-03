@@ -1,6 +1,6 @@
-const inquirer = require('../../lib/inquirer');
+import * as inquirer from '../../lib/inquirer';
 
-module.exports = {
+export default {
   input: {
     message: 'message',
     name: 'name',
