@@ -4,11 +4,11 @@ const _ = {
   get: require('lodash/get'),
   set: require('lodash/set'),
 };
-const { defer, empty, from, of } = require('rxjs');
-const { concatMap, filter, publish, reduce } = require('rxjs/operators');
-const runAsync = require('run-async');
-const utils = require('../utils/utils');
-const Base = require('./baseUI');
+import { defer, empty, from, of } from 'rxjs';
+import { concatMap, filter, publish, reduce } from 'rxjs/operators';
+import runAsync from 'run-async';
+import utils from '../utils/utils';
+import Base from './baseUI';
 
 /**
  * Base interface class other can inherits from

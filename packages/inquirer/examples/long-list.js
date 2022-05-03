@@ -3,7 +3,7 @@
  */
 
 'use strict';
-const inquirer = require('..');
+import inquirer from '..';
 
 const choices = Array.apply(0, new Array(26)).map((x, y) => String.fromCharCode(y + 65));
 choices.push('Multiline option 1\n  super cool feature \n  more lines');

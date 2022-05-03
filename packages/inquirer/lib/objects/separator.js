@@ -1,6 +1,6 @@
 'use strict';
-const chalk = require('chalk');
-const figures = require('figures');
+import chalk from 'chalk';
+import figures from 'figures';
 
 /**
  * Separator object

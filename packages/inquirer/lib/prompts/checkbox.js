@@ -3,14 +3,14 @@
  * `list` type prompt
  */
 
-const chalk = require('chalk');
-const cliCursor = require('cli-cursor');
-const figures = require('figures');
-const { map, takeUntil } = require('rxjs/operators');
-const Base = require('./base');
-const observe = require('../utils/events');
-const Paginator = require('../utils/paginator');
-const incrementListIndex = require('../utils/incrementListIndex');
+import chalk from 'chalk';
+import cliCursor from 'cli-cursor';
+import figures from 'figures';
+import { map, takeUntil } from 'rxjs/operators';
+import Base from './base';
+import observe from '../utils/events';
+import Paginator from '../utils/paginator';
+import incrementListIndex from '../utils/incrementListIndex';
 
 class CheckboxPrompt extends Base {
   constructor(questions, rl, answers) {

@@ -1,10 +1,10 @@
 'use strict';
-const util = require('./readline');
-const cliWidth = require('cli-width');
-const wrapAnsi = require('wrap-ansi');
-const stripAnsi = require('strip-ansi');
-const stringWidth = require('string-width');
-const ora = require('ora');
+import util from './readline';
+import cliWidth from 'cli-width';
+import wrapAnsi from 'wrap-ansi';
+import stripAnsi from 'strip-ansi';
+import stringWidth from 'string-width';
+import ora from 'ora';
 
 function height(content) {
   return content.split('\n').length;

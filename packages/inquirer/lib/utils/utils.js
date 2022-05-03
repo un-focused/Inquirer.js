@@ -1,6 +1,6 @@
 'use strict';
-const { from, of } = require('rxjs');
-const runAsync = require('run-async');
+import { from, of } from 'rxjs';
+import runAsync from 'run-async';
 
 /**
  * Resolve a question property value if it is passed as a function.

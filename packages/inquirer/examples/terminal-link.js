@@ -5,8 +5,8 @@
  */
 
 'use strict';
-const inquirer = require('..');
-const terminalLink = require('terminal-link');
+import inquirer from '..';
+import terminalLink from 'terminal-link';
 
 inquirer
   .prompt([

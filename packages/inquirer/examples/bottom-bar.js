@@ -1,5 +1,5 @@
-const BottomBar = require('../lib/ui/bottom-bar');
-const cmdify = require('cmdify');
+import BottomBar from '../lib/ui/bottom-bar';
+import cmdify from 'cmdify';
 
 const loader = ['/ Installing', '| Installing', '\\ Installing', '- Installing'];
 let i = 4;
@@ -9,7 +9,7 @@ setInterval(() => {
   ui.updateBottomBar(loader[i++ % 4]);
 }, 300);
 
-const { spawn } = require('child_process');
+import { spawn } from 'child_process';
 
 const cmd = spawn(cmdify('npm'), ['-g', 'install', 'inquirer'], { stdio: 'pipe' });
 cmd.stdout.pipe(ui.log);

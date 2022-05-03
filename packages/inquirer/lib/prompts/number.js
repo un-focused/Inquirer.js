@@ -3,7 +3,7 @@
  * `input` type prompt
  */
 
-const Input = require('./input');
+import Input from './input';
 
 /**
  * Extention of the Input prompt specifically for use with number inputs.

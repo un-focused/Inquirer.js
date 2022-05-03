@@ -1,6 +1,6 @@
 'use strict';
 
-const chalk = require('chalk');
+import chalk from 'chalk';
 
 /**
  * The paginator returns a subset of the choices if the list is too long.

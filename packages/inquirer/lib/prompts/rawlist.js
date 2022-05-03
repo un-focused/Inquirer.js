@@ -3,13 +3,13 @@
  * `rawlist` type prompt
  */
 
-const chalk = require('chalk');
-const { map, takeUntil } = require('rxjs/operators');
-const Base = require('./base');
-const Separator = require('../objects/separator');
-const observe = require('../utils/events');
-const Paginator = require('../utils/paginator');
-const incrementListIndex = require('../utils/incrementListIndex');
+import chalk from 'chalk';
+import { map, takeUntil } from 'rxjs/operators';
+import Base from './base';
+import Separator from '../objects/separator';
+import observe from '../utils/events';
+import Paginator from '../utils/paginator';
+import incrementListIndex from '../utils/incrementListIndex';
 
 class RawListPrompt extends Base {
   constructor(questions, rl, answers) {

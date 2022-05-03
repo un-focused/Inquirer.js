@@ -4,7 +4,7 @@
  */
 
 'use strict';
-const inquirer = require('..');
+import inquirer from '..';
 
 console.log('Hi, welcome to Node Pizza');
 

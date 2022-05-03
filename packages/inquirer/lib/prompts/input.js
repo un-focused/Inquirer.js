@@ -3,10 +3,10 @@
  * `input` type prompt
  */
 
-const chalk = require('chalk');
-const { map, takeUntil } = require('rxjs/operators');
-const Base = require('./base');
-const observe = require('../utils/events');
+import chalk from 'chalk';
+import { map, takeUntil } from 'rxjs/operators';
+import Base from './base';
+import observe from '../utils/events';
 
 class InputPrompt extends Base {
   /**

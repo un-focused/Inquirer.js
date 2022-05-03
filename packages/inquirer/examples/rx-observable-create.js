@@ -1,5 +1,5 @@
-const inquirer = require('..');
-const { Observable } = require('rxjs');
+import inquirer from '..';
+import { Observable } from 'rxjs';
 
 const observe = Observable.create((obs) => {
   obs.next({

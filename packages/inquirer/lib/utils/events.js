@@ -1,6 +1,6 @@
 'use strict';
-const { fromEvent } = require('rxjs');
-const { filter, map, share, takeUntil } = require('rxjs/operators');
+import { fromEvent } from 'rxjs';
+import { filter, map, share, takeUntil } from 'rxjs/operators';
 
 function normalizeKeypressEvents(value, key) {
   return { value, key: key || {} };

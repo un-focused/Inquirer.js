@@ -3,11 +3,11 @@
  * `editor` type prompt
  */
 
-const chalk = require('chalk');
-const { editAsync } = require('external-editor');
-const Base = require('./base');
-const observe = require('../utils/events');
-const { Subject } = require('rxjs');
+import chalk from 'chalk';
+import { editAsync } from 'external-editor';
+import Base from './base';
+import observe from '../utils/events';
+import { Subject } from 'rxjs';
 
 class EditorPrompt extends Base {
   /**

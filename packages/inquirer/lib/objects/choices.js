@@ -1,11 +1,11 @@
 'use strict';
-const assert = require('assert');
+import assert from 'assert';
 const _ = {
   filter: require('lodash/filter'),
   map: require('lodash/map'),
 };
-const Separator = require('./separator');
-const Choice = require('./choice');
+import Separator from './separator';
+import Choice from './choice';
 
 /**
  * Choices collection

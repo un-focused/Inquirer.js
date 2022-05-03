@@ -3,7 +3,7 @@
  */
 
 'use strict';
-const inquirer = require('..');
+import inquirer from '..';
 
 /* eslint-disable no-promise-executor-return */
 

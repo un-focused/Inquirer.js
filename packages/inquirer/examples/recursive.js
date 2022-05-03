@@ -4,7 +4,7 @@
  */
 
 'use strict';
-const inquirer = require('..');
+import inquirer from '..';
 const output = [];
 
 const questions = [

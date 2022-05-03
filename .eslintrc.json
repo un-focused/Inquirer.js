@@ -1,5 +1,9 @@
 {
   "extends": ["xo", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
   "env": {
     "mocha": true,
     "jest": true,

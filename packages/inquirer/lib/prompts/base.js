@@ -7,11 +7,11 @@ const _ = {
   defaults: require('lodash/defaults'),
   clone: require('lodash/clone'),
 };
-const chalk = require('chalk');
-const runAsync = require('run-async');
-const { filter, flatMap, share, take, takeUntil } = require('rxjs/operators');
-const Choices = require('../objects/choices');
-const ScreenManager = require('../utils/screen-manager');
+import chalk from 'chalk';
+import runAsync from 'run-async';
+import { filter, flatMap, share, take, takeUntil } from 'rxjs/operators';
+import Choices from '../objects/choices';
+import ScreenManager from '../utils/screen-manager';
 
 class Prompt {
   constructor(question, rl, answers) {

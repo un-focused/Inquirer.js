@@ -3,8 +3,8 @@
  */
 
 'use strict';
-const inquirer = require('..');
-const chalkPipe = require('chalk-pipe');
+import inquirer from '..';
+import chalkPipe from 'chalk-pipe';
 
 const questions = [
   {
