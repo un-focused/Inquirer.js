@@ -1,5 +1,5 @@
 {
-  "name": "@inquirer/core",
+  "name": "@developertheexplorer/core",
   "type": "module",
   "version": "0.2.0",
   "description": "Core Inquirer prompt API",
@@ -27,5 +27,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "gitHead": "f81074652f8b768fd861f6bac0967a77bcffd174"
 }
