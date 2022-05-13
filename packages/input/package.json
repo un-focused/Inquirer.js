@@ -1,7 +1,7 @@
 {
   "name": "@inquirer/input",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Inquirer input text prompt",
   "main": "index.js",
   "repository": "SBoudrias/Inquirer.js",
