@@ -5,6 +5,7 @@ import runAsync from 'run-async';
 import cliSpinners from 'cli-spinners';
 import ScreenManager from './lib/screen-manager';
 
+// OMG wow a spinner
 const spinner = cliSpinners.dots;
 
 const defaultState = {
