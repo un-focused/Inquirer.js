@@ -1,7 +1,7 @@
 {
   "name": "@developertheexplorer/confirm",
   "type": "module",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "Inquirer confirm prompt",
   "main": "index.js",
   "repository": "SBoudrias/Inquirer.js",

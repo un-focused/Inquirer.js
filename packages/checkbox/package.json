@@ -1,6 +1,6 @@
 {
   "name": "@developertheexplorer/checkbox",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "type": "module",
   "description": "Inquirer checkbox prompt",
   "main": "index.js",
